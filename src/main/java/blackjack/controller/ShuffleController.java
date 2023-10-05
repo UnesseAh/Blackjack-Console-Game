@@ -32,7 +32,6 @@ public class ShuffleController {
             }
             i++;
         }
-
         return new int[][][] { extractedCard, restOfCards };
     }
 
@@ -104,7 +103,7 @@ public class ShuffleController {
     }
 
     public static int[][] discardCards(int[][] card1, int[][] card2 ){
-        int size = card1.length +card2.length;
+        int size = card1.length + card2.length;
         int[][] newList = new int[size][2];
 
         for (int i = 0; i <card1.length; i++) {
